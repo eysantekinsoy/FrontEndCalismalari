@@ -1,0 +1,57 @@
+/* tag selectors */
+p {
+    color: red;
+  }
+  /* class selectors */
+  .paragraph {
+    color: black;
+  }
+  /* id selector */
+  #third {
+    color: blue;
+  }
+  /* all children */
+  main ul {
+      background-color: aquamarine;
+  }
+  /* direct child */
+  main>h2{
+      background-color: blueviolet;
+  }
+  section h2 {
+      color: cornflowerblue;
+  }
+  
+  /* pseudo selectors */
+  a:hover{
+      background-color: red;
+  }
+  a:active{
+      background-color: yellow;
+  }
+  /* unvisited */
+  a:link {
+      background-color: black;
+      color: orangered;
+      }
+      a:visited{
+      color: white;
+      background-color: green;
+  }
+  
+  ol>li:first-child{
+      color: blue;
+  }
+  ol>li:last-child{
+      color: red;
+  }
+  ol>li:nth-child(2n+1){
+      background-color: deeppink;
+  }
+  ol>li:nth-child(2n){
+      background-color: gray;
+  }
+  
+  .last p:last-child{
+      background-color: blue;
+  }
