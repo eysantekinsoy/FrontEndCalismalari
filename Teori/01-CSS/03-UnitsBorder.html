@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Units Border</title>
+    <style>
+        /* Sabit Birimler */
+        /* 
+        1px = 0.026cm
+        1cm = 37.8px
+        1in = 2.54cm = 96.12px
+        1pt = 1/72inc
+        1pc = 12pt
+        */
+        /* Göreceli Birimler */
+        /* 
+        %
+        vw: viewportWidth
+        vh: viewportHeight
+         */
+         .px{
+            font-size: 37.8px;
+         }
+         .cm{
+            font-size: 1cm;
+         }
+         .inc{
+            font-size: 0.5in;
+         }
+         .pt{
+            font-size: 50pt;
+         }
+         .pc{
+            font-size: 2pc;
+         }
+         .goreceli-1{
+            background-color: orange;
+            width: 50%;
+         }
+         .goreceli-2{
+            font-size: 5vw;
+         }
+         .goreceli-3{
+            font-size: 5vh;
+         }
+         /* em birimi ata birime bakar ve oransal olarak bir değer alır. */
+         .diger{
+            font-size: 30px;
+         }
+         .em{
+            font-size: 0.5em;
+         }
+         /* rem birimi kök root'a göre oransal bir değer alır. */
+         html{
+            font-size: 16px;
+         }
+         .rem{
+            font-size: 1rem;
+         }
+         .border{
+            width: 150px;
+            height: 50px;
+            /* border-style: solid dotted double dashed;
+            border-width: 1px 2px 3px 4px;
+            border-color: red green blue orange;
+            border-radius: 4px 6px 8px 10px;*/
+            border: 2px solid red;
+            border-radius: 5px;
+        } 
+        .border-2{
+            width: 150px;
+            height: 50px;
+            border-right: 1px solid green;
+        } 
+        .border-3{
+            width: 150px;
+            height: 150px;
+            background-color: red;
+            /* border-radius: 75px; */
+            border-radius: 50%;
+        } 
+    </style>
+</head>
+<body>
+    <div class="px">Pixel</div>
+    <div class="cm">Santimetre</div>
+    <div class="inc">Inch</div>
+    <div class="pt">Point</div>
+    <div class="pc">Picas</div>
+    <div class="goreceli-1">Yüzde</div>
+    <div class="goreceli-2">VW</div>
+    <div class="goreceli-3">VH</div>
+    <div class="diger">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ipsa quaerat fugit repudiandae fugiat ipsam atque <span class="em">consequuntur quas nesciunt </span>  consequatur rem cupiditate quos incidunt, quam quasi magnam, quibusdam, voluptatibus officiis?
+        </p>
+    </div>
+    <div class="diger-2">
+        <p class="rem">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae, est pariatur illum voluptatibus doloremque deleniti possimus veritatis molestiae cum, maxime sequi nam iste repudiandae sapiente? Perferendis neque id fuga quasi?
+        </p>
+    </div>
+    <div class="border"></div>
+    <div class="border-2"></div>
+    <div class="border-3"></div>
+</body>
+</html>

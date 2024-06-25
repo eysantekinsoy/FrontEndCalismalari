@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector</title>
+    <style>
+        .container{
+            background-color: lightskyblue;
+        }
+        .first{
+            color: red;
+        }
+        /* .second{
+            color: greenyellow;
+        } */
+        .container .second{
+            color: greenyellow;
+        }
+        p.third{
+            color: hotpink;
+        }
+        span.third{
+            color: teal;
+        }
+        /* .section strong{
+            color: blue;
+        }
+        .section p strong{
+            color: black;
+        } */
+
+        .section>strong{
+            color: red;
+        }
+        .section p strong{
+            color: blue;
+        }
+        .liste li{
+            color: red;
+        }
+        .liste li:first-child{
+            color: blue;
+        }
+        .liste li:last-child{
+            color: green;
+        }
+        .liste li:nth-child(2){
+            color: grey;
+        }
+        .liste li:nth-child(3){
+            color: teal;
+        }
+        .liste li:nth-child(odd){
+            color: black;
+        }
+        .liste li:nth-child(even){
+            color: orange
+        }
+        .liste li:nth-child(3n+1){
+            color: darkred
+        }
+        p.pseudo::first-line{
+            color: blue;
+        }
+        p.pseudo::first-letter{
+            color: red;
+            background-color: black;
+            font-size: 25px;
+        }
+        p.pseudo::after{
+            content: "-END-";
+            color: goldenrod;
+            /* background-color: black; */
+        }
+        p.pseudo::before{
+            content: "-START-";
+            color: goldenrod;
+            /* background-color: black; */
+        }
+       .liste li::marker{
+        content: "\26C4";
+       }
+
+       .active:active{
+        color: yellow;
+       }
+       .link:link{
+        color: orange;
+       } 
+       .visited:visited{
+        color: aqua;
+       }
+       .hover:hover{
+        color: gray;
+       }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p class="first">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi iusto nihil perspiciatis perferendis explicabo, praesentium velit ut dolorum ipsam nam cum porro recusandae. Libero excepturi eum ut natus obcaecati ex.
+        </p>
+        <p class="second">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi iusto nihil perspiciatis perferendis explicabo, praesentium velit ut dolorum ipsam nam cum porro recusandae. Libero excepturi eum ut natus obcaecati ex.
+        </p>
+        <p class="third">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi iusto nihil perspiciatis perferendis explicabo, praesentium velit ut dolorum ipsam nam cum porro recusandae. Libero excepturi eum ut natus obcaecati ex.
+        </p>
+        <span class="third">Test</span>
+    </div>
+    <p class="second">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi iusto nihil perspiciatis perferendis explicabo, praesentium velit ut dolorum ipsam nam cum porro recusandae. Libero excepturi eum ut natus obcaecati ex.
+    </p>
+    <div class="section">
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo consequatur enim <strong>laboriosam suscipit</strong>, minus obcaecati alias natus unde, sapiente iure quidem sunt, error illum blanditiis! Explicabo voluptatem excepturi quos et.
+        </p>
+        <strong>eSb</strong>
+    </div>
+    <!-- ul.liste>li*7{box-$} -->
+    <ul class="liste">
+        <li>box-1</li>
+        <li>box-2</li>
+        <li>box-3</li>
+        <li>box-4</li>
+        <li>box-5</li>
+        <li>box-6</li>
+        <li>box-7</li>
+    </ul>
+    <p class="pseudo">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora laborum &#128509; 🗽 praesentium dolorum corrupti illo explicabo ut tempore alias iste! Aliquid, laudantium vitae debitis perspiciatis ipsam nisi fugit labore delectus inventore.
+    </p>
+    <a href="#" class="active">ACTIVE</a>
+    <a href="#" class="visited">VISITED</a>
+    <a href="#" class="link">LINK</a>
+    <a href="#" class="hover">HOVER</a>
+</body>
+</html>
