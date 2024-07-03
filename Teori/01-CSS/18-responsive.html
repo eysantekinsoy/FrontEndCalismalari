@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive</title>
+    <style>
+        body div{
+            transition: 1s;
+        }
+        div{
+            /* width: 90%; */
+            width: 18%;
+            float: left;
+            /* height: 150px; */
+            height: 200px;
+            padding: 5px;
+            border-radius: 5px;
+            margin: 4px;
+        }
+        /* bu pixelin üzerinde gerçekleşmesini isteidiğim css kodlarıdır. */
+        /* @media (min-width:600px){
+            body{
+                background-color: black;
+            }
+            div{
+                float: left;
+                width: 45%;
+                margin-left: 10px;
+                height: 100px;
+            }
+        }
+        @media (min-width:1000px){
+            body{
+                background-color: red;
+            }
+            div{
+                width: 18%;
+                height: 200px;
+            }
+        } */
+        /* bu pizelin altında gerçekleşmesini istediğimiz özellikler için */
+        /* @media (max-width:1000px){
+            div{
+                width: 45%;
+                height: 150px;
+            }
+            .box-2{
+                display: none;
+            }
+        }
+        @media (max-width:600px){
+            div{
+                width: 90%;
+                height: 100px;
+                margin: 10px auto;
+                float: none;
+            }
+            .box-4{
+                display: none;
+            }
+            .box-2{
+                display: block;
+            }
+        } */
+
+        @media (min-width:200px) and (max-width:600px){
+            body{
+                background-color: orange;
+            }
+            div{
+                float: none;
+                width: 90%;
+                margin: 10px auto;
+                height: 100px;
+            }
+        }
+        /* @media (width>=601px) and (width<=1000px) */
+        @media (min-width:601px) and (max-width:1000px){
+            body{
+                background-color: black;
+            }
+            div{
+                float: left;
+                width: 45%;
+                margin: 5px;
+                height: 120px;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <div style="background-color: lightblue;" class="box-1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Non nam facere expedita nesciunt consectetur veritatis architecto optio accusantium soluta rem accusamus voluptatum dignissimos id ducimus, hic iusto eaque molestiae magni.
+    </div>
+    <div style="background-color: lightcoral;" class="box-2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Non nam facere expedita nesciunt consectetur veritatis architecto optio accusantium soluta rem accusamus voluptatum dignissimos id ducimus, hic iusto eaque molestiae magni.
+    </div>
+    <div style="background-color: lightgreen;" class="box-3">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Non nam facere expedita nesciunt consectetur veritatis architecto optio accusantium soluta rem accusamus voluptatum dignissimos id ducimus, hic iusto eaque molestiae magni.
+    </div>
+    <div style="background-color: lightgrey;" class="box-4">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Non nam facere expedita nesciunt consectetur veritatis architecto optio accusantium soluta rem accusamus voluptatum dignissimos id ducimus, hic iusto eaque molestiae magni.
+    </div>
+    <div style="background-color: lightpink;" class="box-5">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Non nam facere expedita nesciunt consectetur veritatis architecto optio accusantium soluta rem accusamus voluptatum dignissimos id ducimus, hic iusto eaque molestiae magni.
+    </div>
+    
+</body>
+</html>

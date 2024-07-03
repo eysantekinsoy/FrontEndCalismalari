@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OverFlow</title>
+    <style>
+        div{
+            width: 150px;
+            height: 150px;
+            border: 2px solid black;
+            float: left;
+            margin-left: 20px;
+        }
+        h3{
+            clear: both;
+            color: red;
+        }
+        .visible{
+            overflow: visible;
+        }
+        .scroll{
+            overflow: scroll;
+        }
+        .auto{
+            overflow: auto;
+        }
+        .hidden{
+            overflow: hidden;
+        }
+        /* .resim{
+            overflow: hidden;
+        } */
+        img{
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="visible">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex iste molestias corrupti deleniti? Rerum, inventore deleniti! Inventore hic aspernatur architecto fugiat, ipsum optio culpa veniam ratione nobis, et, quidem a?
+    </div>
+    <div class="scroll">
+        Loremipsumdolorsitametconsectetur adipisicing elit. Ex iste molestias corrupti deleniti? Rerum, inventore deleniti! Inventore hic aspernatur architecto fugiat, ipsum optio culpa veniam ratione nobis, et, quidem a?
+    </div>
+    <div class="auto">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex iste molestias corrupti deleniti? Rerum, inventore deleniti! Inventore hic aspernatur architecto fugiat, ipsum optio culpa veniam ratione nobis, et, quidem a?
+    </div>
+    <div class="hidden">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex iste molestias corrupti deleniti? Rerum, inventore deleniti! Inventore hic aspernatur architecto fugiat, ipsum optio culpa veniam ratione nobis, et, quidem a?
+    </div>
+    <h3>eSb Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, quo. A dolor illum ratione quisquam sit, fugiat provident consectetur dolorum blanditiis ducimus doloribus harum repellendus fugit, ea, nisi aspernatur. Soluta.</h3>
+    <div class="resim">
+        <img src="../resim-1.jpg" alt="asd">
+    </div>
+</body>
+</html>

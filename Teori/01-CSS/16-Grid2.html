@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid-2</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        html,body{
+            height: 100%;
+        }
+        body{
+            background-color: black;
+        }
+        .container{
+            background-color: greenyellow;
+            height: 100%;
+            padding: 15px;
+            text-align: center;
+            display: grid;
+            gap: 10px;
+            grid-template-columns: auto auto auto;
+            grid-template-rows: 100px 1fr 2fr 150px ;
+            grid-template-areas:
+            "menü     menü      menü"
+            "side-bar slider    slider "
+            "side-bar content-1 content-2"
+            "side-bar footer    footer"
+            ;
+        }
+        .item{
+            background-color: orangered;
+            font-size: 20px;
+            color: white;
+        }
+        .mn{grid-area: menü;}
+        .sld{grid-area: slider;}
+        .cn-1{grid-area: content-1;}
+        .cn-2{grid-area: content-2;}
+        .sb{grid-area: side-bar;}
+        .ft{grid-area: footer;}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item mn">Menü</div>
+        <div class="item sld">Slider</div>
+        <div class="item cn-1">Content-1</div>
+        <div class="item cn-2">Content-2</div>
+        <div class="item sb">Side Bar</div>
+        <div class="item ft">Footer</div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: hotpink;
+            border-radius: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            /* animation-name: first;
+            animation-delay: 1s;
+            animation-duration: 3s;
+            animation-iteration-count: 2; */
+            /* animation-direction: alternate; */
+            /* animation-direction: alternate-reverse; */
+            /* animation-fill-mode: backwards; */
+            /* animation-fill-mode: forwards; */
+            /* animation: first 3s 2 alternate forwards; */
+            animation: move 6s infinite;
+            position: relative;
+        }
+        @keyframes first{
+            from{
+                background-color: greenyellow;
+                /* color: white; */
+                
+            }
+            to{
+                background-color: black;
+                /* color: hotpink; */
+            }
+        }
+        @keyframes move{
+            0%{
+                top: 0;
+                left: 0;
+                background-color: greenyellow;
+            }
+            25%{
+                top: 0;
+                left: 300px;
+                background-color: lightcoral;
+            }
+            50%{
+                top:300px;
+                left: 300px;
+                background-color: black;
+            }
+            75%{
+                top: 300px;
+                left: 0;
+                background-color: blue;
+            }
+            100%{
+                top: 0;
+                left: 0;
+            }
+        }
+        .bar{
+            width: 350px;
+            height: 30px;
+            border: 1px solid black;
+            margin:  300px auto;
+            border-radius: 50px;
+            background: linear-gradient(to right,blue,red);
+            background-size: 300%;
+            background-position: center right;
+            animation: bar 2s infinite ;
+        }
+        @keyframes bar{
+            from{
+                background-position: center right;
+                transform: rotate(0deg);
+            }
+            to{
+                background-position: left bottom;
+                /* transform: rotate(360deg); */
+                /* transform: rotateX(360deg); */
+                transform: rotateY(360deg);
+            }
+        }
+        .progress{
+            width: 350px;
+            height: 30px;
+            border: 1px solid black;
+            margin:  50px auto;
+            border-radius: 50px;
+        }
+        .fuel{
+            width: 10%;
+            height: 30px;
+            border-radius: 50px;
+            background-color: rgb(112, 168, 28);
+            opacity: 0;
+            /* animation: load 4s forwards linear; */
+        }
+        .fuel:hover{
+            animation: load 4s forwards linear;
+        }
+        @keyframes load{
+            0%{
+                background-color: red;
+                width: 10%;
+                opacity: 0;
+            }
+            25%{
+                opacity: 1;
+            }
+            50%{
+                background-color: yellow;
+                width: 50%;
+            }
+            100%{
+                background-color: rgb(129, 197, 26);
+                width: 100%;
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        BilgeAdam
+    </div>
+    <div class="bar"></div>
+    <p>Loading...</p>
+    <div class="progress">
+        <div class="fuel"></div>
+    </div>
+</body>
+</html>

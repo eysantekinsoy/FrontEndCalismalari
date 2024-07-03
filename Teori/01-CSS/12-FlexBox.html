@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background: black;
+            color: white;
+            font-family: monospace;
+        }
+        .container{
+            background-color: #2aa4f0;
+            padding: 10px;
+        }
+        .box{
+            background-color: lightsalmon;
+            padding: 30px;
+            margin: 30px;
+            font-size: 25px;
+            font-weight: bold;
+        }
+        .flex-direction{
+            display: flex;
+            flex-direction: row;
+            flex-direction: row-reverse;
+            flex-direction: column;
+            flex-direction: column-reverse;
+        }
+        .flex-wrap{
+            display: flex;
+            flex-wrap: nowrap;
+            flex-wrap: wrap;
+            flex-wrap: wrap-reverse;
+        }
+        .flex-flow{
+            height: 400px;
+            display: flex;
+            flex-flow: row-reverse wrap;
+            flex-flow: row-reverse wrap-reverse;
+            flex-flow: column wrap;
+        }
+        .flex-justify{
+            display: flex;
+            justify-content: start;
+            justify-content: end;
+            justify-content: center;
+            justify-content: space-evenly;
+            justify-content: space-around;
+            justify-content: space-between;
+        }
+        .flex-alignItems{
+            display: flex;
+            height: 600px;
+            align-items: start;
+            align-items: end;
+            align-items: center;
+        }
+        .flex-alignContent{
+            display: flex;
+            height: 800px;
+            flex-wrap: wrap;
+            /* align-items: start;
+            align-items: end;
+            align-items: center; */
+            align-content: center;
+            align-content: start;
+            align-content: end;
+            align-content: space-around;
+            align-content: space-evenly;
+            align-content: space-between;
+        }
+        .flex-gap .box{
+            margin: 0;
+        }
+        .flex-gap{
+            display: flex;
+            flex-wrap: wrap;
+            /* column-gap: 20px;
+            row-gap: 40px; */
+            /* gap: 30px; */
+            gap: 30px 50px;
+        }
+        nav{
+            background-color: #2aa4f0;
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 10px;
+        }
+        nav .brand img{
+            width: 60px;
+        }
+        nav .brand{
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        nav .brand ul{
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+        .login{
+            display: flex;
+            list-style: none;
+            gap: 20px;
+            align-items: center;
+        }
+        nav h3{
+            font-size: 20px;
+        }
+        nav a{
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            display: inline-block;
+            transition: 0.6s;
+        }
+        a:hover{
+            text-decoration: underline;
+            color: orangered;
+            transform: scale(1.2);
+        }
+        .login li:first-child{
+            border-right: 2px solid white;
+            padding-right: 20px;
+        }
+        .flex-order{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .flex-order .box-5{
+            order: -1;
+        }
+        .flex-order .box-1{
+            order: 1;
+        }
+        .flex-grow{
+            display: flex;
+        }
+        .flex-grow .box-2{
+            /* grow büyüyebilme özelliğidir. default değeri 0'dır. */
+            flex-grow: 1;
+        }
+        .flex-grow .box-1{
+            flex-grow: 2;
+        }
+        .flex-shrink{
+            display: flex;
+        }
+        .flex-shrink .box{
+            flex-grow: 1;
+        }
+        .flex-shrink .box-2{
+            /* shrink küçülebilme özelliğidir. default olarak 1 gelir. */
+            /* flex-shrink: 1; */
+            flex-shrink: 0;
+        }
+        .flex-basis{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .flex-basis .box{
+            flex-grow: 1;
+        }
+        .flex-basis .box-2{
+            flex-shrink: 0;
+            flex-basis: 250px;
+        }
+        .flex{
+            display: flex;
+        }
+        .flex .box-2{
+            /* flex: grow shrink basis */
+            flex: 1 0 350px;
+        }
+        .flex-alignSelf{
+            display: flex;
+            height: 600px;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+        .flex-alignSelf .box-1{
+            align-self: start;
+        }
+        .flex-alignSelf .box-3{
+            align-self: end;
+        }
+        .flex-test{
+            display: flex;
+            height: 600px;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
+        }
+    </style>
+</head>
+<body>
+    <h2>Parent Properties</h2>
+    <h3>Flex-Direction</h3>
+    <div class="container flex-direction">
+        <div class="box">Box-1</div>
+        <div class="box">Box-2</div>
+        <div class="box">Box-3</div>
+    </div>
+    <h3>Flex-Wrap</h3>
+    <div class="container flex-wrap">
+        <div class="box">Box-1</div>
+        <div class="box">Box-2</div>
+        <div class="box">Box-3</div>
+        <div class="box">Box-4</div>
+        <div class="box">Box-5</div>
+    </div>
+    <h3>Flex-Flow</h3>
+    <div class="container flex-flow">
+        <div class="box">Box-1</div>
+        <div class="box">Box-2</div>
+        <div class="box">Box-3</div>
+        <div class="box">Box-4</div>
+        <div class="box">Box-5</div>
+    </div>
+    <h3>Flex-Justify-Content</h3>
+    <div class="container flex-justify">
+        <div class="box">Box-1</div>
+        <div class="box">Box-2</div>
+        <!-- <div class="box">Box-3</div> -->
+    </div>
+    <h3>Flex-Align-Items</h3>
+    <div class="container flex-alignItems">
+        <div class="box">Box-1</div>
+        <div class="box">Box-2</div>
+        <div class="box">Box-3</div>
+    </div>
+    <h3>Flex-Align-Content</h3>
+    <div class="container flex-alignContent">
+        <div class="box">Box-1</div>
+        <div class="box">Box-2</div>
+        <div class="box">Box-3</div>
+        <div class="box">Box-4</div>
+        <div class="box">Box-5</div>
+        <div class="box">Box-6</div>
+        <div class="box">Box-7</div>
+    </div>
+    <h3>Flex-Gap</h3>
+    <div class="container flex-gap">
+        <div class="box">Box-1</div>
+        <div class="box">Box-2</div>
+        <div class="box">Box-3</div>
+        <div class="box">Box-4</div>
+        <div class="box">Box-5</div>
+    </div>
+    <h3>Menü Örnek</h3>
+    <nav>
+        <div class="brand">
+            <img src="../00-HTML/img/git.png" alt="logo">
+            <h3>Frontend Co.</h3>
+            <ul>
+                <li><a href="#">Anasayfa</a></li>
+                <li><a href="#">Hakkımızda</a></li>
+                <li><a href="#">Hizmetlerimiz</a></li>
+                <li><a href="#">İletişim</a></li>
+            </ul>
+        </div>
+        <ul class="login">
+            <li><a href="#">Giriş Yap</a></li>
+            <li><a href="#">Kayıt Ol</a></li>
+        </ul>
+    </nav>
+    <h2>Child Properties</h2>
+    <h3>Flex-Order</h3>
+    <div class="container flex-order">
+        <div class="box box-1">Box-1</div>
+        <div class="box box-2">Box-2</div>
+        <div class="box box-3">Box-3</div>
+        <div class="box box-4">Box-4</div>
+        <div class="box box-5">Box-5</div>
+        <div class="box box-6">Box-6</div>
+        <div class="box box-7">Box-7</div>
+    </div>
+    <h3>Flex-Grow</h3>
+    <div class="container flex-grow">
+        <div class="box box-1">Box-1</div>
+        <div class="box box-2">Box-2</div>
+        <div class="box box-3">Box-3</div>
+    </div>
+    <h3>Flex-Shrink</h3>
+    <div class="container flex-shrink">
+        <div class="box box-1">Box-1</div>
+        <div class="box box-2">Box-2</div>
+        <div class="box box-3">Box-3</div>
+    </div>
+    <h3>Flex-Basis</h3>
+    <div class="container flex-basis">
+        <div class="box box-1">Box-1</div>
+        <div class="box box-2">Box-2</div>
+        <div class="box box-3">Box-3</div>
+    </div>
+    <h3>Flex</h3>
+    <div class="container flex">
+        <div class="box box-1">Box-1</div>
+        <div class="box box-2">Box-2</div>
+        <div class="box box-3">Box-3</div>
+    </div>
+    <h3>Flex-Align-Self</h3>
+    <div class="container flex-alignSelf">
+        <div class="box box-1">Box-1</div>
+        <div class="box box-2">Box-2</div>
+        <div class="box box-3">Box-3</div>
+    </div>
+    <h3>Flex-Test</h3>
+    <div class="container flex-test">
+        <div class="box box-1">Box-1</div>
+        <div class="box box-2">Box-2</div>
+        <div class="box box-3">Box-3</div>
+    </div>
+    
+</body>
+</html>

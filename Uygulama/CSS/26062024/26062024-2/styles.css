@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header{
+    background:rgb(142, 54, 230);
+    color:rgb(203, 190, 207);
+    text-align: center;
+    height: 100px;
+    width: auto;
+}
+
+nav {
+    background-color: rgb(142, 54, 230);
+    padding: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex; 
+}
+
+li {
+    margin-right: 20px;
+}
+
+a:hover{
+    color:red;
+}
+
+li:last-child {
+    margin-right: 0;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    padding: 2px;
+}
+.card {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 15px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+.card-content {
+    flex: 1;
+    margin-right: 20px;
+}
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    color: #999;
+}
+  
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+}
+aside {
+    width: 500px;
+    height: 500px;
+    background-color: #f0f0f0;
+    padding: 10px;
+    position: absolute;
+    bottom: 10px;
+    right: 60px;
+}

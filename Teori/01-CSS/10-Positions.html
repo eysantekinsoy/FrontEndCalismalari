@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positions</title>
+    <style>
+        .container{
+            width: 450px;
+            height: 450px;
+            border: 2px solid black;
+            margin: auto;
+            margin-top: 100px;
+            position: relative;
+            margin-bottom: 1500px;
+        }
+        .box{
+            position: static; /*Default deger*/
+            width: 80px;
+            height: 80px;
+            border: 1px solid red;
+        }
+        /* relative => göreceli konum */
+        .box-2{
+            position: relative;
+            top: 50px;
+            left: 50px;
+            z-index: 2;
+        }
+        /* absolute => mutlak konum */
+        .box-3{
+            position: absolute;
+            top: 100px;
+            left: 100px;
+        }
+        .box-4{
+            position: fixed;
+            width: 50%;
+            top: 0;
+            left: 0;
+            /* opacity: 0.5; */
+            z-index: -1;
+        }
+        .box-5{
+            position: sticky;
+            top: 20px;
+            left: 5px;
+        }
+    </style>
+</head>
+<body> 
+    <div class="container">
+        <div style="background-color: red;" class="box box-1"></div>
+        <div style="background-color: blue" class="box box-2"></div>
+        <div style="background-color: orange;" class="box box-3"></div>
+        <div style="background-color: greenyellow;" class="box box-4"></div>
+        <div style="background-color: pink;" class="box box-5"></div>
+    </div>
+    
+</body>
+</html>

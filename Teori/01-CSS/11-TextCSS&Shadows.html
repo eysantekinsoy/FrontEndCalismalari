@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Css ve Shadows</title>
+    <style>
+        .container{
+            width: 300px;
+            height: 500px;
+            border: 2px dashed black;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 0 10px rgb(204, 0, 0);
+            /* text-shadow: 1px 1px lightblue; */
+            background: black;
+            color: white;
+        }
+        img{
+            width: 200px;
+            border-radius: 10px;
+            /* display: block; */
+            /* margin: auto; */
+        }
+        /* p{
+            text-align: center;
+            text-align: justify;
+            text-align: left;
+            text-align: right;
+        } */
+        a{
+            text-decoration: underline;
+            text-decoration-style: wavy;
+            text-decoration: none;
+            display: inline-block;
+            transition: 1s;
+            text-transform: capitalize;
+            text-transform: uppercase;
+            text-transform: lowercase;
+        }
+        a:hover{
+            text-decoration: underline;
+            color: orangered;
+            /* transform: scale(1.2); */
+            /* transform: skew(30deg); */
+            transform: rotate(360deg);
+            
+        }
+        .neonText {
+            color: #fff;
+            text-shadow:
+                    0 0 7px #fff,
+                    0 0 10px #fff,
+                    0 0 21px #fff,
+                    0 0 42px #0fa,
+                    0 0 82px #0fa,
+                    0 0 92px #0fa,
+                    0 0 102px #0fa,
+                    0 0 151px #0fa;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://cdn.pixabay.com/photo/2020/05/18/20/52/celebration-5188398_1280.jpg" alt="party">
+        <h3 class="neonText">Holly Fest</h3>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, qui optio. Fugit quae maxime et, dignissimos ab fuga. Qui repellat quibusdam est nobis obcaecati? Excepturi accusantium delectus quos deleniti dignissimos animi exercitationem culpa facilis, nobis nemo inventore aperiam labore aspernatur nam ex nesciunt cum ipsum? Quasi, eius impedit sunt voluptates quia porro nesciunt laudantium rem non architecto ipsam similique culpa maiores aliquid eum facilis cum dolorum a! Itaque, animi quaerat.
+        </p>
+        <a href="#">Enroll</a>
+    </div>
+    
+</body>
+</html>
