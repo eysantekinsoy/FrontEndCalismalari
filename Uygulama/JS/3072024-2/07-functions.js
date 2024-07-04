@@ -73,50 +73,47 @@ let enBuyukSayi = enBuyukSayiBul(sayilar);
 console.log("Dizideki en büyük sayı: " + enBuyukSayi);
 
 // // 6- Verilen bir dizi içindeki sayıların toplamını hesaplayan bir fonksiyon yazın.
-// function diziToplaminiHesapla(dizi) {
-//     let toplam = 0;
-//     for (let i = 0; i < dizi.length; i++) {
-//         if (typeof dizi[i] === 'number') { 
-//             toplam += dizi[i]; 
-//         }
-//     }
-//     return toplam;
-// }
+function dizininToplaminiHesapla(dizi) {
+    let toplam = 0;
+    for (let i = 0; i < dizi.length; i++) {
+        toplam += dizi[i];
+    }
+    return toplam;
+}
 
-// let sayilar1 = [1, 2, 3, 4, 5];
-// console.log("Dizi içindeki sayıların toplamı:", diziToplaminiHesapla(sayilar1)); 
+let dizi = [1, 2, 3, 4, 5];
+let toplam = dizininToplaminiHesapla(dizi);
+console.log("Dizinin toplamı:", toplam); 
 
 // // 7-Yukarıdaki son iki fonksiyonu arrow function olarak yeniden yazın.
-// const diziToplaminiHesapla = (dizi) => {
-//     let toplam = 0;
-//     dizi.forEach((eleman) => {
-//         if (typeof eleman === 'number') {
-//             toplam += eleman;
-//         }
-//     });
-//     return toplam;
-// };
+const dizininToplaminiHesaplaa = (dizi1) => {
+    let toplam2 = 0;
+    for (let i = 0; i < dizi1.length; i++) {
+        toplam2 += dizi1[i];
+    }
+    return toplam2;
+}
+let dizi1 = [1, 2, 3, 4, 5];
+let toplam2 = dizininToplaminiHesaplaa(dizi1);
+console.log("Dizinin toplamı:", toplam2); 
 
-// let sayilar2 = [1, 2, 3, 4, 5];
-// console.log("Dizi içindeki sayıların toplamı:", diziToplaminiHesapla(sayilar2)); 
-
-
-// const enBuyukSayiBul = (dizi) => {
-//     if (dizi.length === 0) {
-//         return undefined;
-//     }
+const enBuyukSayiBull = (dizi2) => {
+    if (dizi2.length === 0) {
+        return undefined;
+    }
     
-//     let enBuyuk = dizi[0];
-//     dizi.forEach((sayi3) => {
-//         if (sayi3 > enBuyuk) {
-//             enBuyuk = sayi3;
-//         }
-//     });
-//     return enBuyuk;
-// };
-// let sayilar3 = [12, 5, 24, 8, 19];
-// let enBuyukSayi1 = enBuyukSayiBul(sayilar);
-// console.log("Dizideki en büyük sayı: " + enBuyukSayi1);
+    let enBuyuk = dizi2[0];
+    for (let i = 1; i < dizi2.length; i++) {
+        if (dizi2[i] > enBuyuk) {
+            enBuyuk = dizi2[i];
+        }
+    }
+    return enBuyuk;
+};
+sayilar = [10, 20, 30, 40, 50];
+enBuyukSayi = enBuyukSayiBull(sayilar);
+console.log("Dizideki en büyük sayı: " + enBuyukSayi);
+
 
 // Buradan itibaren yalnızca arrow function kullanıyoruz.
 // 8- Verilen bir stringi tersine çeviren bir fonksiyon yazın.
