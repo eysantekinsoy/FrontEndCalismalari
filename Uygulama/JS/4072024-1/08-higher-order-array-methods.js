@@ -102,9 +102,7 @@ console.log(tersCevrilmisDizii);
 // ---------------filter-------------------
 // 11- Verilen bir dizi içerisindeki çift sayıları filtreleyen bir örnek yazın.
 const dizi10 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-const ciftSayilariFiltrele = dizi10.filter(function(sayi) {
-    return sayi % 2 === 0; 
-});
+const ciftSayilariFiltrele = dizi10.filter((sayi)=>sayi % 2 === 0 );
 
 console.log(ciftSayilariFiltrele);
 
