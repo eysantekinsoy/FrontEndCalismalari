@@ -1,0 +1,17 @@
+{
+  "name": "usingsecond",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "random-color-rgb": "^1.1.1",
+    "slugify": "^1.6.6"
+  },
+  "type": "module"
+}

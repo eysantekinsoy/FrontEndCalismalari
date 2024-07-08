@@ -1,0 +1,6 @@
+1) terminale "npm create vite@latest first-project" yazarak startet vite projesi oluşturuldu.
+>react
+>jacascript
+2) Proje dizininde terminale "npm i" yazarak node_modules klasörü ve içeriği yüklendi. Package.json içerisindeki proje içerisindeki proje için gerekli olan dependencies indirildi.
+
+3)terminale "npm run dev"  böylece localhost:5173 portunda port ayağa kaldırıldı.
