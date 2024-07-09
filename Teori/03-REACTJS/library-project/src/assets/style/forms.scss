@@ -1,0 +1,36 @@
+form{
+    
+    background-color: #FFD18E;
+    width: 350px;
+    padding: 15px 25px;
+    margin: 30px auto;
+    border-radius: 15px;
+    text-align: center;
+    color:white;
+    input,select,textarea{
+        display: block;
+        width:100%;
+        margin-bottom:15px;
+        padding:5px 10px;
+        border-radius: 6px;
+        border:1px solid lightgray;
+    }
+    textarea{
+        height:150px;
+    }
+    input[type="submit"]{
+        width: 40%;
+        position:relative;
+        left:180px;
+        padding:10px;
+        cursor: pointer;
+        transition: .5s;
+        font-weight: bold;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        &:hover{
+            background-color:#E9FF97;
+            color:#FFA38F ;
+        }
+    }
+}
