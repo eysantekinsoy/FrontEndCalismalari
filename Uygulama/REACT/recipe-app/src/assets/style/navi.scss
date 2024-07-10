@@ -1,0 +1,32 @@
+nav{
+    background-color: #DC0083;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    .foodbrand{
+        font-size: 15px;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        cursor: default;
+        img{
+            width: 80px;
+        }
+    }
+    .liste{
+        list-style: none;
+        display: flex;
+        align-items: center;
+        gap: 25px;
+        li{
+            transition: .5s;
+            cursor: pointer;
+            &:hover{
+                color: #f3d648;
+                text-decoration: underline;
+                transform: scale(1.2);
+            }
+        }
+    }
+}
