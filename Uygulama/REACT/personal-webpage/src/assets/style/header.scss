@@ -1,0 +1,25 @@
+#header {
+  background-color: #333;
+  color: #fff;
+  padding: 1.25rem 0;
+  font-size: 1.25rem;
+}
+
+nav ul {
+  list-style: none;
+  margin-left: 1.5rem;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 1.25rem;
+}
+
+nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+}
+nav ul li a:hover {
+  color: #697bffe9;
+  text-decoration: underline;
+}

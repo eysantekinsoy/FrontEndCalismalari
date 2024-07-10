@@ -1,4 +1,5 @@
 import React from 'react'
+import '../assets/style/sectionabout.scss'
 
 const Sectionabout = () => {
   return (
@@ -12,7 +13,7 @@ const Sectionabout = () => {
     </article>
     <article>
       <h3>Education</h3>
-      <p>I graduated with a degree in Computer Science from XYZ University. My coursework included web development,
+      <p>I graduated with a degree in Computer Engineer from Ataturk University. My coursework included web development,
         software engineering, and database management.</p>
     </article>
   </section>

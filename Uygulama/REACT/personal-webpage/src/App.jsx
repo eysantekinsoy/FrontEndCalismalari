@@ -1,13 +1,11 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import Footer from './components/Footer'
+import React,{ useState } from 'react'
 import Header from './components/Header'
 import Section from './components/Section'
 import Sectionabout from './components/Sectionabout'
 import Sectionskills from './components/Sectionskills'
+import Sectionprojects from './components/Sectionprojects'
 import SectionContact from './components/Sectioncontact'
+import Footer from './components/Footer'
 
 function App() {
 
@@ -17,6 +15,7 @@ function App() {
     <Section/>
     <Sectionabout/>
     <Sectionskills/>
+    <Sectionprojects/>
     <SectionContact/>
     <Footer/>
     </>

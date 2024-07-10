@@ -1,4 +1,5 @@
 import React from 'react';
+import '../assets/style/sectioncontact.scss'
 
 const SectionContact = () => {
   return (

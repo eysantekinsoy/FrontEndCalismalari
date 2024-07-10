@@ -1,8 +1,9 @@
 import React from 'react'
+import '../assets/style/header.scss'
 
 const Header = () => {
   return (
-    <div>
+    <section id="header">
         <nav>
       <ul>
         <li><a href="#home">Home</a></li>
@@ -12,7 +13,7 @@ const Header = () => {
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
-    </div>
+      </section>
   )
 }
 

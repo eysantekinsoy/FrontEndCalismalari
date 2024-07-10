@@ -1,0 +1,44 @@
+.profile-container {
+  text-align: center;
+  margin: 20px;
+}
+
+.profile-container h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.profile-container p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.profile-picture {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.profile-picture img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.social-icons a {
+  text-decoration: none;
+  font-size: 1.5em;
+  color: #000; 
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #0077b5;
+}

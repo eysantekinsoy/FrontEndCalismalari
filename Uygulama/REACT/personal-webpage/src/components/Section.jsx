@@ -1,19 +1,24 @@
 import React from 'react';
+import { FaTwitter, FaInstagram, FaLinkedin, FaGithub, FaFacebook } from 'react-icons/fa';
+import '../assets/style/section.scss'
+import profilePic from '../assets/img/eysantekinsoy1.jpg';
 
 const Section = () => {
   return (
-    <section id="home">
+    <div className='profile-container'>
       <h1>Welcome to My Website</h1>
       <p>Hello, I'm Eysan Tekinsoy, a web developer. Passionate about creating awesome websites.</p>
-      <img src="eysantekinsoy.jpg" alt="Profile Picture" />
-      <div className="icons">
-        <a href="#" title="Twitter"><i className="fab fa-twitter fa-xl"></i></a>
-        <a href="#" title="Instagram"><i className="fab fa-instagram fa-xl"></i></a>
-        <a href="#" title="LinkedIn"><i className="fab fa-linkedin fa-xl"></i></a>
-        <a href="#" title="GitHub"><i className="fab fa-github fa-xl"></i></a>
-        <a href="#" title="Facebook"><i className="fab fa-facebook fa-xl"></i></a>
+      <div className='profile-picture'>
+      <img src={profilePic} alt="Profil Resmi" />
       </div>
-    </section>
+      <div className="social-icons">
+        <a href="https://twitter.com/yourprofile" target="_blank" rel="noopener noreferrer"><FaTwitter /></a>
+        <a href="https://instagram.com/yourprofile" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
+        <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
+        <a href="https://github.com/yourprofile" target="_blank" rel="noopener noreferrer"><FaGithub /></a>
+        <a href="https://facebook.com/yourprofile" target="_blank" rel="noopener noreferrer"><FaFacebook /></a>
+      </div>
+    </div>
   );
 }
 

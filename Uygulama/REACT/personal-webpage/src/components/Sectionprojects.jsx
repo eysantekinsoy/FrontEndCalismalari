@@ -1,5 +1,5 @@
 import React from 'react'
-
+import '../assets/style/sectionprojects.scss'
 const Sectionprojects = () => {
   return (
     <div>
