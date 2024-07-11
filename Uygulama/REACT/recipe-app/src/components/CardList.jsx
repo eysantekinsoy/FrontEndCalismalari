@@ -1,15 +1,13 @@
 import React from 'react'
 import Card from './Card'
 
-const CardList = ({foods}) => {
+const CardList = ({foods,foodDelete}) => {
   return (
     <div className='card-list'>
       {
         foods.map(food=>
-          <Card food={food} key={food.id}/>
-
+          <Card food={food} foodDelete={foodDelete} key={food.id}/>
         )
-
       }
     </div>
   )

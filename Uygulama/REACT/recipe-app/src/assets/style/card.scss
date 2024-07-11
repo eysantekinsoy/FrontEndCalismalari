@@ -1,65 +1,68 @@
-.card{
-    background-color: #f4dea1;
-    border-radius: 10px;
+.card {
+    position: relative;
+    background-color: #FFD18E;
+    border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     overflow: hidden;
-    width: 300px;
-    height: 20px auto;
-    align-items: center;
-    padding:20px;
+    width: 290px;
+    height: auto;
+    padding: 24px;
     transition: transform 0.2s;
     color: white;
+    display: flex;
+    flex-direction: column; 
     img{
         width: 100%;
         border-radius: 8px;
     }
     &-body{
-        padding: 10px;
+        padding: 2px;
         h4{
             text-align: center;
-            font-size: 16px;
-            letter-spacing: 1px;
+            font-size: 18px;
+            letter-spacing: 2px;
         }
     }
-    .delete,.edit{
+
+    .delete, .edit {
         position: absolute;
-        top: 0;
-        width: 15px;
-        height: 240px;
-        border:  none;
+        bottom: 4px;
+        width: 80px;
+        height: 30px;
+        border: none;
         cursor: pointer;
         opacity: 0;
-        transition: 1s;
+        transition: opacity 0.3s, width 0.3s, color 0.3s;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
-    .delete{
-        left: 0;
-        border-radius: 10px 0 0 10px;
-        background-color: rgba(255, 0, 0, 0.7);
-        &:hover{
-            width: 40%;
-            opacity: 1;
-            color: white;
-            font-size: 20px;
-            font-weight: bold;
-        }
 
+    .delete {
+        left: 60px;
+        border-radius: 10px;
+        background-color: rgba(255, 0, 0, 0.7);
     }
-    .edit{
-        right: 0;
-        border-radius: 0 10px 10px 0;
-        background-color: rgba(255, 255, 0, 0.7);
-        &:hover{
-            width: 60%;
+
+    .edit {
+        right: 60px;
+        border-radius: 10px;
+        background-color: rgba(24, 233, 10, 0.7);
+    }
+
+    &:hover {
+        .delete, .edit {
             opacity: 1;
-            font-size: 20px;
+            width: 80px;
+            color: white;
+            font-size: 14px;
             font-weight: bold;
         }
     }
 }
-
 .card-list{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 30px;
+    gap: 40px;
 }
