@@ -49,27 +49,33 @@
   "kategoriler": [
     {
       "kategoriId": "0",
-      "kategoriAdi": "Tüm Kitaplar"
+      "kategoriAdi": "Tüm Kitaplar",
+      "id": "f340"
     },
     {
       "kategoriId": "1",
-      "kategoriAdi": "Yazılım"
+      "kategoriAdi": "Yazılım",
+      "id": "edaf"
     },
     {
       "kategoriId": "2",
-      "kategoriAdi": "Tarih"
+      "kategoriAdi": "Tarih",
+      "id": "9265"
     },
     {
       "kategoriId": "3",
-      "kategoriAdi": "Roman"
+      "kategoriAdi": "Roman",
+      "id": "e279"
     },
     {
       "kategoriId": "4",
-      "kategoriAdi": "Finans"
+      "kategoriAdi": "Finans",
+      "id": "8b61"
     },
     {
       "kategoriId": "5",
-      "kategoriAdi": "Diğer"
+      "kategoriAdi": "Diğer",
+      "id": "2f15"
     }
   ]
 }

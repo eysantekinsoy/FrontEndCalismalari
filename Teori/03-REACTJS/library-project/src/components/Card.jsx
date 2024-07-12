@@ -2,12 +2,12 @@ import React from 'react'
 import '../assets/style/card.scss'
 import Book from '../assets/img/defaultbook.jpg'
 
-const Card = ({kitap,kitapSil}) => {
+const Card = ({kitap,kitapSil,cardDuzenle}) => {
   //console.log(props);
   return (
     <div className='card'>
       <button onClick={()=>kitapSil(kitap.id)} className='delete'>Sil</button>
-      <button className='edit'>Düzenle</button>
+      <button onClick={()=>cardDuzenle(kitap.id)} className='edit'>Düzenle</button>
         <img src={kitap.kitapResmi?kitap.kitapResmi:Book}alt={kitap.kitapAdi+"_kapak"}/>
         <div className='card-body'>
           <h4>{kitap.kitapAdi}</h4>
