@@ -1,7 +1,7 @@
-import React, {useState} from 'react'
+import React, {useEffect,useState} from 'react'
 import '../assets/style/forms.scss'
 
-const Forms = ({foodAdd,foods}) => {
+const Forms = ({foodAdd,foods,chooseFood}) => {
     const[title,setTitle]=useState("");
     const[description,setDescription]=useState("");
     const[image,setİmage]=useState("");
@@ -33,10 +33,18 @@ const Forms = ({foodAdd,foods}) => {
       }
     }
 
+    useEffect(()=>{
+      if(chooseFood){
+        setTitle(chooseFood.title);
+        setDescription(chooseFood.description);
+        setİmage(chooseFood.image);
+      }
+    },[chooseFood])
+
     return (
       <div>
-        
         <form onSubmit={handleSubmit}>
+          <h3>{chooseFood?"Edit":"Add"}</h3>
           <input type="text" placeholder="Recipe Title" value={title} onChange={(e) => setTitle(e.target.value)}/>
           {titleErr && <p style={{ color: 'red' }}>Please enter title</p>}
           <br />
@@ -46,7 +54,7 @@ const Forms = ({foodAdd,foods}) => {
           <input type="url" placeholder="Image URL" value={image} onChange={(e) => setİmage(e.target.value)}/>
           {imageErr && <p style={{ color: 'red' }}>Please enter image</p>}
           <br />
-          <input type="submit" value="Add Recipe" />
+          <input type="submit" value={chooseFood?"Edit":"Add"} />
         </form>
       </div>
     );
