@@ -1,13 +1,15 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import Card from './Card'
+import DataContext from '../context/DataContext'
 
-const CardList = ({foods,foodDelete,cardDuzenle}) => {
+const CardList = () => {
+  const {foods}=useContext(DataContext)
   return (
     <div className='card-list'>
       {
         foods.map(food=>
-          !foods.isDeleted &&
-            <Card food={food} foodDelete={foodDelete} cardDuzenle={cardDuzenle} key={food.id}/>
+          !food.isDeleted &&
+            <Card food={food} key={food.id}/>
           )
       }
     </div>

@@ -1,8 +1,10 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import '../assets/style/card.scss'
 import Food from '../assets/img/dontfood.png'
+import DataContext from '../context/DataContext'
 
-const Card = ({food,foodDelete,cardDuzenle}) => {
+const Card = ({food}) => {
+  const {foodDelete,cardDuzenle} = useContext(DataContext);
   return (
         <div className='card'>
           <button onClick={()=>foodDelete(food.id)} className='delete'>SİL</button>

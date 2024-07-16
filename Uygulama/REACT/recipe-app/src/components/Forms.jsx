@@ -1,46 +1,23 @@
-import React, {useEffect,useState} from 'react'
+import React, { useContext } from 'react'
 import '../assets/style/forms.scss'
+import DataContext from '../context/DataContext';
 
-const Forms = ({foodAdd,foods,chooseFood}) => {
-    const[title,setTitle]=useState("");
-    const[description,setDescription]=useState("");
-    const[image,setİmage]=useState("");
-    const [titleErr, setTitleErr] = useState(false);
-    const [descriptionErr, setDescriptionErr] = useState(false);
-    const [imageErr, setİmageErr] = useState(false);
-  
-    const handleSubmit=(e)=>{
-      e.preventDefault();
-      setTitleErr(false);
-      setDescriptionErr(false);
-      setİmageErr(false);
-      if(title.trim() && description.trim() && image.trim())
-        {
-          foodAdd({
-            id:(Number(foods[foods.length-1].id)+1).toString(),
-            title:title,
-            description:description,
-            image:image
-          }); 
-          setTitle("");
-          setDescription("");
-          setİmage("");
-      }
-      else{
-        !title.trim() && setTitleErr(true)
-        !description.trim() && setDescriptionErr(true)
-        !image.trim() && setİmageErr(true)
-      }
-    }
-
-    useEffect(()=>{
-      if(chooseFood){
-        setTitle(chooseFood.title);
-        setDescription(chooseFood.description);
-        setİmage(chooseFood.image);
-      }
-    },[chooseFood])
-
+const Forms = () => {
+  const {chooseFood,
+    title,
+    description,
+    image,
+    setTitle,
+    titleErr,
+    descriptionErr,
+    imageErr,
+    setTitleErr,
+    setDescriptionErr,
+    setİmageErr,
+    setDescription,
+    setİmage,
+    handleSubmit
+  }=useContext(DataContext);
     return (
       <div>
         <form onSubmit={handleSubmit}>
