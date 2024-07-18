@@ -2,10 +2,9 @@
   "foods": [
     {
       "id": "1",
-      "title": "DDSpaghetti Carbonara",
-      "description": "DDA classic Italian pasta dish with a creamy egg sauce.",
-      "image": "https://foodwithfeeling.com/wp-content/uploads/2021/02/Vegan-Pad-Thai-7-300x300.jpg",
-      "isDeleted": true
+      "title": "Spaghetti Carbonara",
+      "description": "A classic Italian pasta dish with a creamy egg sauce.",
+      "image": "https://foodwithfeeling.com/wp-content/uploads/2021/02/Vegan-Pad-Thai-7-300x300.jpg"
     },
     {
       "id": "2",
@@ -63,23 +62,9 @@
     },
     {
       "id": "11",
-      "title": "denemeee",
-      "description": "deneme",
-      "image": "https://foodwithfeeling.com/wp-content/uploads/2021/02/Vegan-Pad-Thai-7-300x300.jpg",
-      "isDeleted": true
-    },
-    {
-      "id": "12",
       "title": "deneme12",
       "description": "deneme12",
-      "image": "https://foodwithfeeling.com/wp-content/uploads/2021/02/Vegan-Pad-Thai-7-300x300.jpg",
-      "isDeleted": true
-    },
-    {
-      "id": "13",
-      "title": "Deneme Kontrol",
-      "description": "Deneme Deneme Deneme",
-      "image": "https://foodwithfeeling.com/wp-content/uploads/2021/02/Vegan-Pad-Thai-7-300x300.jpg",
+      "image": "https://sinfullyspicy.com/wp-content/uploads/2021/01/4-1-300x300.jpg",
       "isDeleted": true
     }
   ]

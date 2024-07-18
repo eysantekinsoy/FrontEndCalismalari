@@ -11,7 +11,7 @@
     },
     {
       "id": "2",
-      "kitapAdi": "Şeker Portakalı",
+      "kitapAdi": "Şeker Portakalıı",
       "kitapYazari": "Jose Mauro De Vasconcelos",
       "kitapKategorisi": "Roman",
       "kitapSayfaSayisi": 320,
@@ -66,12 +66,31 @@
     },
     {
       "id": "8",
-      "kitapAdi": "jay",
-      "kitapYazari": "jayjay",
+      "kitapAdi": "jay1",
+      "kitapYazari": "jayjay1",
       "kitapKategorisi": "Roman",
       "kitapSayfaSayisi": "123",
       "kitapResmi": "",
-      "kitapAciklamasi": "sefr rdgrtb wefw"
+      "kitapAciklamasi": "sefr rdgrtb wefw1"
+    },
+    {
+      "id": "9",
+      "kitapAdi": "deneme1",
+      "kitapYazari": "deneme1",
+      "kitapKategorisi": "Yazılım",
+      "kitapSayfaSayisi": "12",
+      "kitapResmi": "",
+      "kitapAciklamasi": "deneme1",
+      "isDeleted": true
+    },
+    {
+      "id": "10",
+      "kitapAdi": "denemeee1",
+      "kitapYazari": "deneme1",
+      "kitapKategorisi": "Yazılım",
+      "kitapSayfaSayisi": "111",
+      "kitapResmi": "",
+      "kitapAciklamasi": "deneme1"
     }
   ],
   "kategoriler": [

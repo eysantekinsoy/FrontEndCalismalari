@@ -15,6 +15,7 @@ export const DataProvider=({children})=>{
     const [titleErr, setTitleErr] = useState(false);
     const [descriptionErr, setDescriptionErr] = useState(false);
     const [imageErr, setİmageErr] = useState(false);
+    const [search, setSearch]=useState("");
   
     const foodAdd = async (newfood) => {
       let url="http://localhost:3000/foods";
@@ -113,7 +114,8 @@ export const DataProvider=({children})=>{
         setİmageErr,
         handleSubmit,
         foods, //CardList
-        foodDelete,cardDuzenle //Card
+        foodDelete,cardDuzenle, //Card
+        search,setSearch
     }}>
         {children}
            </DataContext.Provider>

@@ -7,9 +7,9 @@ import { CiEdit } from "react-icons/ci";
 
 
 const Card = ({kitap}) => {
-  const {kitapSil,cardDuzenle,search}=useContext(DataContext);
+  const {kitapSil,cardDuzenle,state}=useContext(DataContext);
   return (
-    (kitap.kitapAdi.toLowerCase().startsWith(search.toLowerCase()) || kitap.kitapYazari.toLowerCase().startsWith(search.toLowerCase()))&&
+    (kitap.kitapAdi.toLowerCase().startsWith(state.search.toLowerCase()) || kitap.kitapYazari.toLowerCase().startsWith(state.search.toLowerCase()))&&
     <div className='card'>
       <button onClick={()=>kitapSil(kitap.id)} className='delete'><FaRegTrashAlt size={40} />
       </button>

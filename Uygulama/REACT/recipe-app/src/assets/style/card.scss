@@ -10,7 +10,13 @@
     transition: transform 0.2s;
     color: white;
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
+    text-decoration: none;
+    transition: .5s;
+    &:hover{
+        transform:scale(1.1);
+        box-shadow: 0 0 10px rgb(255, 132, 0);
+    }
     img{
         width: 100%;
         border-radius: 8px;

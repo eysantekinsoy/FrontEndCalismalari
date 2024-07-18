@@ -1,0 +1,18 @@
+.search{
+    background-color: #dc00845c;
+    color: white;
+    display:flex;
+    align-items:center;
+    gap: 30px;
+    padding: 12px;
+    justify-content:center;
+    margin-bottom: 35px;
+    input{
+        padding: 6px 10px;
+        border-radius: 8px;
+        border: 2px solid grey;
+    }
+    input:focus{
+        outline: 3px solid greenyellow;
+    }
+}

@@ -3,7 +3,7 @@ nav{
     color: white;
     display: flex;
     justify-content: space-between;
-    padding: 15px;
+    padding: 8px;
     .foodbrand{
         font-size: 15px;
         display: flex;
@@ -15,18 +15,35 @@ nav{
         }
     }
     .liste{
+        padding: 0;
         list-style: none;
         display: flex;
         align-items: center;
+        justify-content: center;
         gap: 25px;
+        font-size: 17px;
         li{
-            transition: .5s;
-            cursor: pointer;
-            &:hover{
-                color: #f3d648;
-                text-decoration: underline;
-                transform: scale(1.2);
+            .active{
+                color:rgb(79, 248, 53);
             }
+            a{
+                color: rgb(248, 247, 247);
+                letter-spacing: 1px;
+                text-decoration: none;
+                transform: skew(20deg);
+                transition: .6s;
+                cursor: pointer;
+
+                &:hover{
+                    color: #f3d648;
+                    text-decoration: underline;
+                    transform: scale(1.2);
+                }
+            }
+            
+
+            
+
         }
     }
 }
