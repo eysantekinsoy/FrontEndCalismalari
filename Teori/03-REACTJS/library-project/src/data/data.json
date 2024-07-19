@@ -44,54 +44,8 @@
       "kitapSayfaSayisi": 272,
       "kitapResmi": "https://img.kitapyurdu.com/v1/getImage/fn:11599115/wh:true/wi:220",
       "kitapAciklamasi": "“Koca bir kavmin binlerce kilometreyi üç asır içinde geçtiğini düşünün… Bu, dünyayı değiştirmez de ne yapar? İşte Türkler dünyayı böyle değiştirdi. Bu sebeple, bizim hayalî bir tarih ve kahramanlar üretmeye değil, yalnızca doğruyu öğrenmeye ihtiyacımız var…”"
-    },
-    {
-      "id": "6",
-      "kitapAdi": "abcd",
-      "kitapYazari": "abcd",
-      "kitapKategorisi": "Yazılım",
-      "kitapSayfaSayisi": "123",
-      "kitapResmi": "",
-      "kitapAciklamasi": "abcde adsgdll DAFSRFEDB",
-      "isDeleted": true
-    },
-    {
-      "id": "7",
-      "kitapAdi": "körlük 2",
-      "kitapYazari": "abcds",
-      "kitapKategorisi": "Roman",
-      "kitapSayfaSayisi": "123",
-      "kitapResmi": "",
-      "kitapAciklamasi": "sfrg drgg rfef"
-    },
-    {
-      "id": "8",
-      "kitapAdi": "jay1",
-      "kitapYazari": "jayjay1",
-      "kitapKategorisi": "Roman",
-      "kitapSayfaSayisi": "123",
-      "kitapResmi": "",
-      "kitapAciklamasi": "sefr rdgrtb wefw1"
-    },
-    {
-      "id": "9",
-      "kitapAdi": "deneme1",
-      "kitapYazari": "deneme1",
-      "kitapKategorisi": "Yazılım",
-      "kitapSayfaSayisi": "12",
-      "kitapResmi": "",
-      "kitapAciklamasi": "deneme1",
-      "isDeleted": true
-    },
-    {
-      "id": "10",
-      "kitapAdi": "denemeee1",
-      "kitapYazari": "deneme1",
-      "kitapKategorisi": "Yazılım",
-      "kitapSayfaSayisi": "111",
-      "kitapResmi": "",
-      "kitapAciklamasi": "deneme1"
     }
+   
   ],
   "kategoriler": [
     {

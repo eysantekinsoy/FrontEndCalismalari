@@ -24,8 +24,7 @@ const LoginPage = () => {
   return (
     <div className='login-page'>
         <div className="head">
-            <h3>BilgeAdam Boost</h3>
-            <h3>Ankara-16</h3>
+            <h3>Tekinsoy</h3>
             <h3>Kütüphanesi</h3>
         </div>
         <form onSubmit={handleLogin}>
