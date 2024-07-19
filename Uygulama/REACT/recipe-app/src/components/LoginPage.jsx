@@ -24,16 +24,15 @@ const LoginPage = () => {
   return (
     <div className='login-page'>
         <div className="head">
-            <h3>Eysan's Recipe</h3>
-            <h3>App</h3>
-            <h3>Welcome!</h3>
+            <h3>Welcome to</h3>
+            <h3>Eysan's Recipe Applicaton</h3>
         </div>
         <form onSubmit={handleLogin}>
-            <h3>Giriş Yap</h3>
-            <input value={user} onChange={e=>setUser(e.target.value)} type="text" placeholder='Kullanıcı Adı'/>
-            <input value={password} onChange={e=>setPassword(e.target.value)} type="password" placeholder='Parola'/>
-            <input type="submit" value={"Giriş"}/>
-            <Link to="/eysansrecipe/home">Ziyaretçi olarak siteye giriş için tıklayınız..</Link>
+            <h3>Login</h3>
+            <input value={user} onChange={e=>setUser(e.target.value)} type="text" placeholder='Username'/>
+            <input value={password} onChange={e=>setPassword(e.target.value)} type="password" placeholder='Password'/>
+            <input type="submit" value={"Login"}/>
+            <Link to="/eysansrecipe/home">Click here to log in to the site as a visitor</Link>
         </form>
     </div>
   )
