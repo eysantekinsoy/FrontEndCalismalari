@@ -11,7 +11,7 @@ const CardDetail = () => {
         <img src={foods[parametre-1].image} alt="food" />
         <h3>{foods[parametre-1].title}</h3>
         <p>{foods[parametre-1].description}</p>
-        <Link to="/nav/home">Geri dönmek için tıklayınız..</Link>
+        <Link to="/eysansrecipe/home">Geri dönmek için tıklayınız..</Link>
     </div>
   )
 }

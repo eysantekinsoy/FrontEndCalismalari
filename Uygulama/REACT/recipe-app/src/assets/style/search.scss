@@ -1,18 +1,42 @@
 .search{
-    background-color: #dc00845c;
+    background-color: #dc0084f5;
     color: white;
-    display:flex;
-    align-items:center;
-    gap: 30px;
-    padding: 12px;
-    justify-content:center;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+    justify-content: space-between;
     margin-bottom: 35px;
     input{
-        padding: 6px 10px;
-        border-radius: 8px;
-        border: 2px solid grey;
+        padding: 5px 10px;
+        border-radius: 5px;
+        border: 1px solid grey;
     }
     input:focus{
         outline: 3px solid greenyellow;
+    }
+    .kullanici{
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        gap: 5px;
+        &-card{
+            display: flex;
+            align-items: center;
+            height: 60px;
+            width: 250px;
+            img{
+                width: 50px;
+                height: 50px;
+                object-fit: cover;
+                border-radius: 50%;
+                margin-right: 10px;
+            }
+        }
+    }
+    .search-bar{
+        display: flex;
+        align-items: center;
+        gap: 20px;
     }
 }

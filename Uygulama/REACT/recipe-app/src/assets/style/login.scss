@@ -1,0 +1,27 @@
+.login-page{
+    background: linear-gradient(rgba(0, 0, 0, 0.216),black),url("https://cdn.pixabay.com/photo/2021/09/20/06/55/spaghetti-6639970_960_720.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    position: relative;
+    .head{
+        position: absolute;
+        color: white;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+    }
+    form{
+        background-color: #ffffff6c;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        color:rgb(237, 237, 237)
+    }
+}
+#root,html,body{
+    height: 100%;
+}

@@ -30,11 +30,11 @@
         }
     }
 
-    .delete, .edit {
+    .delete, .edit, .detail {
         position: absolute;
         bottom: 5px;
         width: 80px;
-        height: 28px;
+        height: 27px;
         border: none;
         cursor: pointer;
         opacity: 0;
@@ -45,21 +45,33 @@
     }
 
     .delete {
-        left: 50px;
+        left: 10px;
         border-radius: 10px;
         background-color: rgba(255, 0, 0, 0.7);
     }
 
     .edit {
-        right: 50px;
+        right: 10px;
         border-radius: 10px;
         background-color: rgba(24, 233, 10, 0.7);
     }
+    .detail {
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #5a11ed;
+        color: white;
+        text-decoration: none;
+        text-align: center;
+        font-size: 14px;
+        font-weight: bold;
+        border-radius: 10px;
+    }
+
 
     &:hover {
-        .delete, .edit {
+        .delete, .edit, .detail {
             opacity: 1;
-            width: 90px;
+            width: 86px;
             color: white;
             font-size: 14px;
             font-weight: bold;

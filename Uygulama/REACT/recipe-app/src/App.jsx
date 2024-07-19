@@ -6,28 +6,36 @@ import Forms from "./components/Forms";
 import About from "./components/About";
 import CardDetail from "./components/CardDetail";
 import Loading from "./components/Loading";
-import CardList from "./components/CardList";
-
+import LoginPage from "./components/LoginPage";
+import { AuthProvider } from "./context/AuthContext";
+import PrivateRoute from "./services/PrivateRoute";
+import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer } from "react-toastify";
 
 const App = () => {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path='/*' element={<Loading/>}/>
-        <Route path='eysansrecipe' element={<Navi/>}>
-          <Route path='home' element={<Home/>} />
+    <AuthProvider>
+      <BrowserRouter>
+      <ToastContainer/>
+        <Routes>
+          <Route path="/*" element={<Loading />} />
+          <Route path="/login" element={<LoginPage />} />
+          <Route path="eysansrecipe" element={<Navi />}>
+            <Route path="/eysansrecipe/home" element={<Home />} >
 
-          {/* <Route path='cardlist' element={<CardList/>} /> */}
-          <Route path='/nav/home/:cardId' element={<CardDetail/>} />
+              <Route path='/eysansrecipe/home' element={<PrivateRoute element={<Forms/>}/>}/>
+            
+            </Route>
 
+            <Route path="/eysansrecipe/home/:cardId" element={<CardDetail />} />
 
-
-          <Route path='forms' element={<Forms/>} />
-          <Route path='about' element={<About/>} />
-        </Route>
-      </Routes>
-    </BrowserRouter>
-  )
-}
+            <Route path="forms" element={<Forms />} />
+            <Route path="about" element={<About />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
+    </AuthProvider>
+  );
+};
 
 export default App;

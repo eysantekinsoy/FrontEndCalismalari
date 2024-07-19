@@ -1,13 +1,13 @@
 import React from "react";
 import Header from "../components/Header";
-import Forms from "../components/Forms";
 import CardList from "../components/CardList";
+import { Outlet } from "react-router-dom";
 
 const Home = () => {
   return (
     <div>
         <Header/>
-        <Forms/>
+        <Outlet/>
         <CardList/>
     </div>
   )

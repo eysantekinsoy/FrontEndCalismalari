@@ -7,7 +7,7 @@ const Loading = () => {
 
   useEffect(()=>{
     setTimeout(()=>{
-      navigate("/nav/home");
+      navigate("/eysansrecipe/home");
     },2000)
   })
   

@@ -20,12 +20,15 @@ export const DataProvider=({children})=>{
     const foodAdd = async (newfood) => {
       let url="http://localhost:3000/foods";
       if(!chooseFood){
+        newfood.id = (Number(foods[foods.length-1].id)+1).toString()
+        
         setFoods(prev=>[...prev,newfood]);
         const response=await axios.post(url,newfood);
       }
       else{
         url+=`/${chooseFood.id}`;
         const response2=await axios.put(url,newfood);
+        newfood.id=chooseFood.id
         setFoods(prev=>
           prev.map(food=>{
             if(food.id===chooseFood.id){
@@ -68,7 +71,6 @@ export const DataProvider=({children})=>{
     if(title.trim() && description.trim() && image.trim())
       {
         foodAdd({
-          id:(Number(foods[foods.length-1].id)+1).toString(),
           title:title,
           description:description,
           image:image

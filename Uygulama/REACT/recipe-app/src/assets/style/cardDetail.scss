@@ -1,20 +1,25 @@
-.detay{
-    width: 80%;
-    margin: 40px auto;
-    text-align: center;
-    img{
-      width: 500px;
-      height: 300px;
-      object-fit: cover;
-      border-radius: 50% 50% 54% 46% / 76% 75% 25% 24%;      
-      
-    }
-    h3{
-      text-transform: uppercase;
-      font-size: 20px;
-    }
-    p{
-      text-align: justify;
-      line-height: 25px;
-    }
+.detay {
+  width: 80%;
+  margin: 40px auto;
+  text-align: center;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+
+  img {
+    width: 50%;
+    max-width: 400px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+
 }
