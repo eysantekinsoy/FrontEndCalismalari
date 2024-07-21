@@ -88,7 +88,7 @@ export const DataProvider=({children})=>{
   
   useEffect(()=>{
     foodsAll();
-  })
+  },[])
 
   useEffect(()=>{
     if(chooseFood){

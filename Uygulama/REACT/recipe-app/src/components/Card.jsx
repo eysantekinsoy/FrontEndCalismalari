@@ -26,7 +26,7 @@ const Card = ({food}) => {
           <img src={food.image?food.image:Food} alt={food.title+"_kapak"} />
           <div className="card-body">
           <h4>{food.title}</h4>
-          <p>{food.description}</p>
+          <p>{food.description.substring(0,food.description.substring(0,100).lastIndexOf(" "))+"..."}</p>
           </div>
         </div>
       )

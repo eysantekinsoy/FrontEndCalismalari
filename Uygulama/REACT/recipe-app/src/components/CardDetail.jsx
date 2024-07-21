@@ -1,11 +1,13 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { Link, useParams } from 'react-router-dom'
-import { foods } from '../data/data.js';
 import "../assets/style/cardDetail.scss";
+import DataContext from '../context/DataContext.jsx';
 
 const CardDetail = () => {
+    const {foods} = useContext(DataContext)
     const params=useParams()
     const parametre=params.cardId;
+
   return (
     <div className='detay'>
         <img src={foods[parametre-1].image} alt="food" />
